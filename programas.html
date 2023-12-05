@@ -1,92 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/programas.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+
     <header class="header" id="inicio">
         <img class="hamburguer" src="img/hamburguesa.svg" alt="">
         <nav class="menu-navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Acerca de nosotras</a>
-                <a href="#programas">Nuesto programas</a>
-                <a href="ayudar.html">Como ayudar</a>
-                <a href="galeria.html">Galeria</a>
-                <a href="expertos.html">Especializados</a> 
-                <a href="preguntas.html">Preguntas frecuentes</a> 
-                <a href="#footer">Contacto</a>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Acerca de nosotras</a>
+            <a href="#programas">Nuesto programas</a>
+            <a href="ayudar.html">Como ayudar</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="expertos.html">Especializados</a>
+            <a href="preguntas.html">Preguntas frecuentes</a>
+            <a href="blog.html">blog</a>
+            <a href="donaciones.html">Donaciones</a>
+            <a href="contactos.html">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">Las Juntadas</h1>
-            <p class="copy">Nuestra misión es incidir en la sociedad y en la políticas públicas a través de la divulgación de información, la educación comunitaria y demás acciones articuladas para posicionar las libertades de las mujeres como un tema de interés público.
+            <p class="copy">Nuestra misión es incidir en la sociedad y en la políticas públicas a través de la
+                divulgación de información, la educación comunitaria y demás acciones articuladas para posicionar las
+                libertades de las mujeres como un tema de interés público.
             </p>
         </div>
-        
+
     </header>
     <main>
-     
+
         <section class="program-contenedor" id="programas">
+            <br>
             <h2 class="subtitulo">Nuestros programas</h2>
             <div class="contenedor-programas">
                 <img src="img/checklist.svg" alt="">
                 <div class="checklist-programas">
                     <div class="program">
                         <h3 class="n-program"><span class="number">1</span>Proceso de formacion feminista</h3>
-                        <p> Un proceso de formación feminista totalmente virtual con 14 mini talleres con tópicos para adentrase en la lucha feminista en Honduras.</p>
+                        <p> Un proceso de formación feminista totalmente virtual con 14 mini talleres con tópicos para
+                            adentrase en la lucha feminista en Honduras.</p>
                     </div>
                     <div class="program">
                         <h3 class="n-program"><span class="number">2</span>Juntas decidimos</h3>
-                        <p> Proyecto con micro-proyecto donde promovemos actitudes responsables ante la sexualidad, 
-                            donde abordamos cómo prevenir los problemas relacionados con la salud en general y la salud sexual 
-                            y reproductiva en particular y buscar procurar igualdad de trato y oportunidades para mujeres y varones.</p>
+                        <p> Proyecto con micro-proyecto donde promovemos actitudes responsables ante la sexualidad,
+                            donde abordamos cómo prevenir los problemas relacionados con la salud en general y la salud
+                            sexual
+                            y reproductiva en particular y buscar procurar igualdad de trato y oportunidades para
+                            mujeres y varones.</p>
 
                     </div>
                     <div class="program">
                         <h3 class="n-program"><span class="number">3</span>Mejorar el bienestar de la juventud</h3>
-                        <p> Generar conciencia a los jóvenes sobre participación juvenil, formándose y capacitándose en 
-                            el conocimiento y ejercicio efectivo de la misma y fomentar su participación activa en la 
+                        <p> Generar conciencia a los jóvenes sobre participación juvenil, formándose y capacitándose en
+                            el conocimiento y ejercicio efectivo de la misma y fomentar su participación activa en la
                             sociedad a través de instancias concretas de acción.
                         </p>
                     </div>
                 </div>
             </div>
+            <br>
+            <!-- Banner motivacional sobre los programas -->
+            <div class="contenedor-banner-programas">
+                <div class="overlay"></div>
+                <img src="img/banner-programas-background.jpg" alt="">
+                <p class="text-banner-programas">
+                    ¡Únete a nuestros programas y contribuye al bienestar de la población hondureña! <br>
+                    Ofrecemos formación integral en feminismo, promoción de actitudes responsables ante la sexualidad, y
+                    fomento de la participación juvenil. <br>
+                    ¡Inscríbete ahora y sé parte del cambio!
+                </p>
+            </div>
+            <br>
+            <!-- Programa de formación feminista -->
+            <div class="new-cards-container">
+                <section class="new-program-card primera">
+                    <div class="container-cards-image">
+                        <div class="overlay-img-cards"></div>
+                        <img class="card-program-img" src="img/program-1.webp" alt="image">
+                    </div>  
+                    <br>
+                    <h3 class="new-program-number"><span class="new-number">1</span>Programa de Formación Feminista</h3>
+                    <div class="new-heading">Temas:</div>
+                    <ul class="new-list">
+                        <li class="new-list-item">Historia del movimiento feminista</li>
+                        <li class="new-list-item">Derechos de las mujeres</li>
+                        <li class="new-list-item">Violencia de género</li>
+                        <li class="new-list-item">Igualdad de género</li>
+                    </ul>
+                    <div class="new-heading">Objetivos:</div>
+                    <p>
+                        Brindar a las mujeres una formación integral en feminismo y 
+                        fortalecer el conocimiento y la participación de las mujeres en la lucha por la igualdad de
+                        género
+                    </p>
+                    <div class="new-heading">Beneficios:</div>
+                    <ul class="new-list">
+                        <li class="new-list-item">Las mujeres que participan en el programa obtienen una visión amplia
+                            del feminismo</li>
+                        <li class="new-list-item">Desarrollan sus habilidades de liderazgo y activismo</li>
+                    </ul>
+                    <div class="new-heading">Inscripción:</div>
+                    <p>El programa es gratuito<br>La inscripción se realiza en línea</p>
+                    
+                </section>
+
+                <!-- Juntas decidimos -->
+                <section class="new-program-card segunda">
+                    <div class="container-cards-image">
+                        <div class="overlay-img-cards"></div>
+                        <img class="card-program-img" src="img/program-2.jpg" alt="image">
+                    </div>  
+                    <br>
+                    <h3 class="new-program-number"><span class="new-number">2</span>Juntas decidimos</h3>
+                    <div class="new-heading">Objetivos:</div>
+                    <p>
+                        Promover actitudes responsables ante la sexualidad<br>
+                        Procurar igualdad de trato y oportunidades para mujeres y varones
+                    </p>
+                    <div class="new-heading">Beneficios:</div>
+                    <ul class="new-list">
+                        <li class="new-list-item">Los jóvenes aprenden sobre su sexualidad de manera integral y
+                            responsable</li>
+                        <li class="new-list-item">Desarrollan habilidades para prevenir los problemas relacionados con
+                            la salud sexual y reproductiva</li>
+                        <li class="new-list-item">Se empoderan para participar en la construcción de una sociedad más
+                            justa e igualitaria.</li>
+                    </ul>
+                    <div class="new-heading">Requisitos:</div>
+                    <p>Ser joven</p>
+                    <div class="new-heading">Inscripción:</div>
+                    <p>El programa es gratuito<br>La inscripción se realiza en línea</p>
+                    
+                </section>
+
+                <!-- Mejorar el bienestar de la juventud -->
+                <section class="new-program-card tercera">
+                    <div class="container-cards-image">
+                        <div class="overlay-img-cards"></div>
+                        <img class="card-program-img" src="img/program-3.png" alt="image">
+                    </div>  
+                    <br>
+                    <h3 class="new-program-number"><span class="new-number">3</span>Mejorar el bienestar de la juventud
+                    </h3>
+                    <div class="new-heading">Objetivos:</div>
+                    <p>
+                        Generar conciencia a los jóvenes sobre participación juvenil<br>
+                        Formar y capacitar a los jóvenes en el conocimiento y ejercicio efectivo de la participación
+                        juvenil<br>
+                        Fomentar la participación activa de los jóvenes en la sociedad a través de instancias concretas
+                        de acción
+                    </p>
+                    <div class="new-heading">Beneficios:</div>
+                    <ul class="new-list">
+                        <li class="new-list-item">Los jóvenes aprenden sobre la importancia de la participación juvenil
+                        </li>
+                        <li class="new-list-item">Desarrollan sus habilidades de liderazgo y ciudadanía</li>
+                        <li class="new-list-item">Se empoderan para participar en la construcción de una sociedad más
+                            justa e igualitaria.</li>
+                    </ul>
+                    <div class="new-heading">Requisitos:</div>
+                    <p>Ser joven</p>
+                    <div class="new-heading">Inscripción:</div>
+                    <p>El programa es gratuito<br>La inscripción se realiza en línea</p>                    
+                </section>
+            </div>
         </section>
-
-       
-
-
+        <br>
     </main>
 
     <footer id="footer">
         <div class="contenedor footer-content">
-                <div class="contact-us">
-                    <h2 class="brand">Las Juntadas</h2>
-                    <p>--</p>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/lasjuntadas" class="social-media-icon">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                    <a href="https://twitter.com/lasjuntadas?fbclid=IwAR3d24Mb-DQlsBjLj4vCG1rhAfE7_bVrPLOOafqGmQG6BYz3HWfzGx0I8ns" class="social-media-icon">
-                        <i class='bx bxl-twitter' ></i>
-                    </a>
-                    <a href="https://www.instagram.com/lasjuntadas?fbclid=IwAR32JsK5Z-2fyExF2KHOlwJpRWtJPh6tw99W1vmDMnYNLNPC2YaETrqAvMY" class="social-media-icon">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                </div>
+            <div class="contact-us">
+                <img src="img/blog4.png" width="60%">
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/lasjuntadas" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com/lasjuntadas?fbclid=IwAR3d24Mb-DQlsBjLj4vCG1rhAfE7_bVrPLOOafqGmQG6BYz3HWfzGx0I8ns"
+                    class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/lasjuntadas?fbclid=IwAR32JsK5Z-2fyExF2KHOlwJpRWtJPh6tw99W1vmDMnYNLNPC2YaETrqAvMY"
+                    class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
         </div>
         <div class="line"></div>
     </footer>
 
-    
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+
+
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/questions.js"></script>
 </body>
+
 </html>

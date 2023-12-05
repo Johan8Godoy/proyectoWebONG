@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Acerca de nosotras</a>
+            <a href="programas.html">Nuesto programas</a>
+            <a href="ayudar.html">Como ayudar</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="#expertos">Especializados</a>
+            <a href="preguntas.html">Preguntas frecuentes</a>
+            <a href="blog.html">blog</a>
+            <a href="donaciones.html">Donaciones</a>
+            <a href="contactos.html">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Las Juntadas</h1>
+            <p class="copy">Nuestra misión es incidir en la sociedad y en la políticas públicas a través de la
+                divulgación de información, la educación comunitaria y demás acciones articuladas para posicionar las
+                libertades de las mujeres como un tema de interés público.
+            </p>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1>Blog Las Juntadas</h1>
+        <p>Bienvenides a <strong>Nuestro Blog Las Juntadas</strong>, un espacio dedicado a la exploración y promoción de la
+            igualdad de género, la diversidad y la justicia social. Aquí, nos embarcamos en un viaje apasionante hacia
+            la comprensión y celebración de la feminidad en todas sus formas y expresiones.</p>
+        <p>Creemos en la importancia de la voz femenina y en la lucha constante por un mundo más inclusivo y equitativo.
+            A través de nuestros artículos, recursos y diálogo abierto, buscamos inspirar, educar y fomentar la
+            reflexión sobre temas que afectan a mujeres y personas de género diverso.</p>
+        
+        <article class="article">
+            <h2>Proyecto Juntes Decidimos</h2>
+            <h3>Escuela Virtual</h3>
+            <p>Fecha: 02 - 20 de septiembre de 2023</p>
+            <img src="img/blog1.jpg" alt="">
+            <p>Con este proyecto queremos enseñarles a las mujeres jovenes que aun estan en escuelas y colegios el valor y el poder que tienen y a liberarse de las cadenas que las detienen de una manera virtual y poder expresarse en plenitud.</p>
+        </article>
+
+        <article class="article">
+            <h2>Proyecto Juntes Decidimos</h2>
+            <h3>Escuela Presencial</h3>
+            <p>Fecha: 20 - 30 de Septiembre de 2023</p>
+            <img src="img/blog2.jpg" alt="Descripción de la imagen 2">
+            <p>En esta segunda etapa logramos ir de manera presencial a escuelas y colegios y enseñarles a las chicas de una manera mas practica y didactica el valor y el poder que tienen y a liberarse de las cadenas que las detienen de una manera virtual y poder expresarse en plenitud.</p>
+        </article>
+
+        <article class="article">
+            <h2>Proyecto con las OPS</h2>
+            <p>Fecha: 19 de octubre de 2023</p>
+            <img src="img/blog3.jpg" alt="Descripción de la imagen 2">
+            <p>brindamos charlas, folletos y otros materiales educativos en las escuelas sobre el trato hacia la mujer.</p>
+        </article>
+
+        <article class="ultimo">
+            <h2>Las Juntadas</h2>
+            <img src="img/blog4.png" alt="">
+            <p>El feminismo es la búsqueda incansable de igualdad entre géneros. No es una lucha contra los hombres, sino contra la discriminación basada en el género. Es la creencia de que todas las personas merecen los mismos derechos y oportunidades, independientemente de su género. El feminismo no solo beneficia a las mujeres; es un movimiento que aboga por un mundo donde todos puedan vivir sin restricciones impuestas por estereotipos de género. Al desafiar normas obsoletas, el feminismo trabaja para construir una sociedad inclusiva y justa para todos. Apoyar el feminismo es abogar por la equidad, la diversidad y el respeto mutuo.</p>
+        </article>
+
+
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <img src="img/blog4.png" width="60%">
+            
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/lasjuntadas" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com/lasjuntadas?fbclid=IwAR3d24Mb-DQlsBjLj4vCG1rhAfE7_bVrPLOOafqGmQG6BYz3HWfzGx0I8ns"
+                    class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/lasjuntadas?fbclid=IwAR32JsK5Z-2fyExF2KHOlwJpRWtJPh6tw99W1vmDMnYNLNPC2YaETrqAvMY"
+                    class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+
+</body>
+
+</html>

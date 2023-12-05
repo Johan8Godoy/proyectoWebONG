@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/preguntas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -20,7 +22,9 @@
                 <a href="galeria.html">Galeria</a>
                 <a href="expertos.html">Especializados</a> 
                 <a href="#preguntas">Preguntas frecuentes</a> 
-                <a href="#footer">Contacto</a>
+                <a href="blog.html">blog</a>
+                <a href="donaciones.html">Donaciones</a>
+                <a href="contactos.html">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">Las Juntadas</h1>
@@ -31,64 +35,144 @@
     </header>
     <main>
    
-        <section class="questions container" id="preguntas">
-            <h2 class="subtitulo">Preguntas frecuentes</h2>
-            <p class="questions-paragraph">Todo lo que necesites saber.</p>
+        <div class="wrapper">
+            <h1>Preguntas frecuentes</h1>
+            <p>Todo lo que necesitas saber</p>
+    
+            <div class="faq">
+                <button class="accordion">
+                    ¿Cuál es el rango de edad para ser parte de la colectiva?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        El rango de edad para ser parte de la colectiva es de 12 años a 30 años de edad.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Cuál es nuestro actuar ético político?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        Nuestras acciones estarán encaminadas a promover los derechos sexuales y reproductivos 
+                        de las niñas y mujeres en Honduras como fin principal, lo que no excluye la participación y acuerpamiento 
+                        en procesos que defiendan otros derechos humanos de las mismas.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Cuáles son nuestras líneas de acción?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        <br>Vinculación Social: Por medio de proyectos que tengan como beneficiarios directos la ciudadanía.</br>
 
-            <section class="questions-container">
-                <article class="questions-padding">
-                    <div class="questions-answer">
-                        <h3 class="questions-title">¿Cuál es el rango de edad para ser parte de la colectiva? 
-                            <span class="questions-arrow">
-                                <img src="./img/arrow.svg" class="questions-img">
-                            </span>
-                        </h3>
-
-                        <p class="questions-show">El rango de edad para ser parte de la colectiva es de 12 años a 30 años de edad. 
-                        </p>
-                    </div>
-                </article>
-
-                <article class="questions-padding">
-                    <div class="questions-answer">
-                        <h3 class="questions-title">¿Cuál es nuestro actuar ético político? 
-                            <span class="questions-arrow">
-                                <img src="./img/arrow.svg" class="questions-img">
-                            </span>
-                        </h3>
-
-                        <p class="questions-show">Nuestras acciones estarán encaminadas a promover los derechos sexuales y reproductivos 
-                            de las niñas y mujeres en Honduras como fin principal, lo que no excluye la participación y acuerpamiento 
-                            en procesos que defiendan otros derechos humanos de las mismas.</p>
-                    </div>
-                </article>
-
-                <article class="questions-padding">
-                    <div class="questions-answer">
-                        <h3 class="questions-title">¿Cuáles son nuestras líneas de acción?
-                            <span class="questions-arrow">
-                                <img src="./img/arrow.svg" class="questions-img">
-                            </span>
-                        </h3>
-
-                        <p class="questions-show">Vinculación Social: Por medio de proyectos que tengan como beneficiarios directos la ciudadanía. 
-
-                            Incidencia digital: Generar reflexiones e impacto en los medios digitales a través de la divulgación ética y veraz de la información. 
+                        <br>Incidencia digital: Generar reflexiones e impacto en los medios digitales a través de la divulgación ética y veraz de la información.</br> 
                             
-                            Incidencia política y social: Dando seguimiento y constituyendo posicionamientos técnicos de todos los procesos derivados de las funciones públicas y hechos de relevancia relacionados al ámbito de los derechos Sexuales y reproductivos.
-                            </p>
-                    </div>
-                </article>
-            </section>
+                        <br>Incidencia política y social: Dando seguimiento y constituyendo posicionamientos técnicos de todos los procesos derivados de las funciones públicas y hechos de relevancia relacionados al ámbito de los derechos Sexuales y reproductivos.</br>
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    Lo que quieren los/las/les jóvenes
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        Es una iniciativa destinada a recoger las perspectivas, opiniones y aspiraciones de los jóvenes de todo el mundo.
+                        El objetivo de esta iniciativa es crear unanplataforma para que los jóvenes puedan hacer oír su voz y llamar la
+                        atención sobre los temas que más les importan.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Dónde podemos participar siendo jóvenes?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        <br>1. Voluntariados</br>
+                        <br>2. Espacios académicos/universitarios</br>
+                        <br>3. Sociedad civil/ONG's</br>
+                        <br>4. Instituciones públicas</br>
+                        <br>5. Partidos políticos</br>
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Se puede ser de cualquier religión y ser feminista?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        Sí, en nuestros talleres del Proceso de Formación Feminista donde hablamos sobre Feminismo, Aborto
+                        y LGBTIQ+ desde una perspectiva religiosa, nos han hablado sobre este tema tan importante y muchas veces tan
+                        difícil de poder sobrellevar al ser feministas y luchar contra un sistema patriarcal. Mercedes nos enseñó que las
+                        feministas de distintas religiones luchan dentro de sus contextos, son hermanas al igual que todas y no hay que
+                        menospreciarlas o hacerlas sentir indiferentes solo por creer que la religión no va de la mano con nuestras luchas. 
+                        Así que Mercedes nos hizo recordar que podemos ser de cualquier religión y ser feministas. 💜 
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Qué es la ESI? ¿Qué nos enseña?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>Es la Educación Sexual Integral (ESI) que genera espacios de enseñanza y aprendizaje que promueven saberes y
+                        habilidades en las niñeces y adolescencias  para que puedan tomar decisiones de manera autónoma e informada.
+                        <br>La ESI nos enseña:</br>
+                        <br>1. Cuidar el propio cuerpo y la salud.</br>
+                        <br>2. Garantizar la equiedad de género.</br>
+                        <br>3. Valorar las relaciones interpersonales libres de discriminación, coacción y violencia.</br>
+                        <br>4. Respetar la diversidad.</br>
+                        <br>5. Ejercer nuestros derechos.</br>
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Qué es la población LGTBIQ+?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                       Son un conjunto diverso de individuos que comparten una identidad de género y/o orientación sexual que difiere
+                       de la norma heteronormativa. La sigla "LGTBIQ+" representa a lesbianas, gais, bisexuales, transgénero,
+                       intersexuales, queer y otras identidades relacionadas.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    ¿Por qué luchamos?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="panel">
+                    <p>
+                        Luchamos por una Honduras más justa, inclusiva y donde todas, todos y todes seamos quienes somos y amemos
+                        libremente sin violencia y sin miedos.
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
     </main>
 
     <footer id="footer">
         <div class="contenedor footer-content">
-                <div class="contact-us">
-                    <h2 class="brand">Las Juntadas</h2>
-                    <p>--</p>
+            <div class="contact-us">
+                <img src="img/blog4.png" width="60%">
                 </div>
                 <div class="social-media">
                     <a href="https://www.facebook.com/lasjuntadas" class="social-media-icon">
@@ -104,6 +188,24 @@
         </div>
         <div class="line"></div>
     </footer>
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
 
 
     <script src="js/menu.js"></script>

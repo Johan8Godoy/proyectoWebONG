@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página web</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/expertos.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -20,7 +22,9 @@
                 <a href="galeria.html">Galeria</a>
                 <a href="#expertos">Especializados</a> 
                 <a href="preguntas.html">Preguntas frecuentes</a> 
-                <a href="#footer">Contacto</a>
+                <a href="blog.html">blog</a>
+                <a href="donaciones.html">Donaciones</a>
+                <a href="contactos.html">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">Las Juntadas</h1>
@@ -31,22 +35,60 @@
     </header>
     <main>
      
-        <section class="contenedor" id="expertos">
-            <h2 class="subtitulo">Expertos en:</h2>
-            <section class="experts">
-                <div class="cont-expert">
-                    <img src="img/pie_chart.svg" alt="">
-                    <h3 class="n-expert">Analytics</h3>
+        <section class="pruebaMA">
+            <h1 class="title">Especializados en:</h1>
+
+            <div class="container">
+                <div class="card">
+                    <img src="img/formacionAcademica.svg" alt="">
+                    <h3>Formación Feminista</h3>
+                    <p>Donde hablamos de la realidad de la mujer en Honduras.</p>
                 </div>
-                <div class="cont-expert">
-                    <img src="img/search_engine.svg" alt="">
-                    <h3 class="n-expert">SEO</h3>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="img/violenciaGenero.svg" alt="">
+                    <h3>Violencia de género</h3>
+                    <p>Afectando especialmente a mujeres, niñas y personas de la comunidad LGTBIQ+.</p>
                 </div>
-                <div class="cont-expert">
-                    <img src="img/security.svg" alt="">
-                    <h3 class="n-expert">Security</h3>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="img/educacionSexual.svg" alt="">
+                    <h3>Educación Sexual</h3>
+                    <p>Aprendiendo sobre temas como ser:
+                        <br>-Derechos sexuales y reproductivos.
+                        <br>-Aborto legal, seguro y gratuito e importancia de la ESI.
+                        <br>-¡Si a la PAE!
+                        <br>-Infecciones de transmisión sexual.
+                        <br>-Menstruación digna.
+                    </p>
                 </div>
-            </section>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="img/team.svg" alt="">
+                    <h3>Proceso de formación "Juntes Decidimos"</h3>
+                    <p>Donde aprenderás temas que te ayudarán a adentrarte en la lucha feminista
+                        hondureña para la defensa de nuestros derechos sexuales y reproductivos, como ser:
+                        <br>Sistemas de opresión a la mujer.
+                        <br>Conocer más de nuestros derechos, derechos sexuales y reproductivos.
+                        <br>Tipos de violencia basado en género.
+                        <br>Dirigido a niñas, jóvenes, mujeres, personas no binarias y personas trans.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img src="img/feminismos.jpg" alt="">
+                    <h3>Feminismos</h3>
+                    <p>En talleres donde podemos explorar la historia del feminismo, desde sus raíces en el pasado hasta las diversas
+                        corrientes y enfoques en la actualidad. Donde hemos destacado las figuras clave del movimiento feminista,
+                        las luchas históricas y los logros significativos obtenidos. También hemos examinado los desafíos persistentes
+                        y los temas clave que enfrentamos en la búsqueda de la igualdad y equidad de género. </p>
+                    <p>“Tenemos que seguir fomentando esta lucha, seguir promoviendo nuestros derechos”. ✊ 💜 Yoselin Sandoval-</p>
+                </div>
+            </div>
         </section>
 
 
@@ -54,9 +96,8 @@
 
     <footer id="footer">
         <div class="contenedor footer-content">
-                <div class="contact-us">
-                    <h2 class="brand">Las Juntadas</h2>
-                    <p>--</p>
+            <div class="contact-us">
+                <img src="img/blog4.png" width="60%">
                 </div>
                 <div class="social-media">
                     <a href="https://www.facebook.com/lasjuntadas" class="social-media-icon">
@@ -72,6 +113,24 @@
         </div>
         <div class="line"></div>
     </footer>
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
 
     
     <script src="js/menu.js"></script>

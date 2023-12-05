@@ -94,6 +94,42 @@ body{
     font-size: 25px;
 }
 
+/*inicio */
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+
+}
+
+.about_img{
+    text-align: center;
+    
+
+}
+
+.about_img--left{
+    text-align: left;
+    
+}
+
+.about_picture{
+    max-width: 80%;
+    border-radius: 30px;
+}
+
+.about_paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+
+/* aqui termina inicio */
+
+
 /* Services */
 .services-contenedor{
     background: #f2f2f2; /*color fondo */
@@ -195,7 +231,7 @@ body{
 
 /*como ayudar */
 
-.about {
+.aboutt {
     text-align: center;
 }
 
@@ -206,11 +242,11 @@ body{
 }
 
 
-.about__paragraph {
+.about___paragraph {
     line-height: 1.7;
 }
 
-.about__main {
+.about___main {
     padding-top: 80px;
     display: grid;
     width: 90%;
@@ -221,7 +257,7 @@ body{
 }
 
 
-.about__icons {
+.about___icons {
     display: grid;
     gap: 1em;
     justify-items: center;
@@ -230,7 +266,7 @@ body{
     margin: 0 auto;
 }
 
-.about__icon {
+.about__icons {
     width: 220px;
 }
 
@@ -397,7 +433,111 @@ body{
 /*aqui termina preguntas frecuentes */
 
 
+/*Pagina de blog*/
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.article {
+    max-width: 300px;
+    margin-bottom: 40px;
+    margin: 20px;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Aqui termina pagina de blog*/
+
+/*parte de cesar*/
+/* Estilos para la página de contactos */
+
+/* Estilos generales */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container-contactos {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: radial-gradient(circle at center, rgba(138, 43, 226, 0.5), rgba(255, 255, 255, 0));
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    
+  }
+  
+  /* Estilos para la sección de Información de Contacto  y Redes Sociales*/
+  
+  .contact-info,
+  .red-social {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .contact-info h2,
+  .red-social h2 {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .contact-info ul,
+  .red-social ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .contact-info li,
+  .red-social li {
+    margin-bottom: 12px;
+  }
+  
+  .contact-info a,
+  .red-social a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover,
+  .red-social a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*Aqui termina Contactos*/
+/*fin parte de cesar*/
 
 /*footer o pie de pagina*/
 footer{
@@ -566,5 +706,74 @@ footer{
         width: 95%;
         margin-bottom: 40px;
     }
+
     
+    
+}
+
+.spinner-background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 3px dashed #bbb;
+    border-radius: 50%;
+    border-top-color: #d8d50a;
+    animation: spinner 1s linear infinite;
+    z-index: 1001;
+}
+
+.spinner-text{
+    color:#fff;
+    font-size: 1.5rem;
+}
+.spinner-text::after {
+    content:"";
+    animation: loading-dots 1s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(145deg);
+    }
+    60% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-dots {
+    0% {
+        content: "";
+    }
+    25% {
+        content: ".";
+    }
+    50% {
+        content: "..";
+    }
+    75% {
+        content: "...";
+    }
+    100% {
+        content: "";
+    }
 }
